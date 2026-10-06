@@ -7,7 +7,7 @@ int main()
     char operator;
     double first_number, second_number;
     //capturing the operator input
-    printf("Enter an operator (+, -, *, /): ");
+    printf("Enter an operator (+, -, *, /, %%): ");
     scanf("%c", &operator);
     //capturing the numbers inputs
     printf("Enter the numbers: ");
@@ -34,6 +34,15 @@ int main()
             printf("Error: Can't divide by zero.\n");
         }
        break;
+    
+    case '%':
+        if (second_number != 0.0) {
+            printf("%.2lf %% %.2lf = %.2lf\n", first_number, second_number, fmod(first_number, second_number));
+        } else {
+        printf("Error: Can't divide by zero.\n");
+        }
+        break;
+    
 
     default:
         printf("Invalid operator.\n");
