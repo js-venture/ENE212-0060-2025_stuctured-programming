@@ -55,7 +55,7 @@ int main()
     printf("Grade: %c\n", student_grade);
 
 
-    //overall pass or fail
+    //overall pass or fail output
     if (student_marks>=40.0){
         printf("STATUS: PASSED\n");
     }else{
